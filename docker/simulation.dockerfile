@@ -43,7 +43,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libcgal-dev \
     cpufrequtils \
     libompl-dev
-RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python${PYTHON_VERSION} 1
+# RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python${PYTHON_VERSION} 1
 
 # Install cmake
 RUN wget https://github.com/Kitware/CMake/releases/download/v3.16.0/cmake-3.16.0-Linux-x86_64.sh
